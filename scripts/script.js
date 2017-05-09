@@ -46,6 +46,6 @@ function soap(url, state) {
 }
 
 function changeAll(state) {
-    soap('http://192.168.1.68/upnp/control/basicevent1', state);
-    soap('http://192.168.1.253/upnp/control/basicevent1', state);
+    soap('https://192.168.1.68/upnp/control/basicevent1', state);
+    soap('https://192.168.1.253/upnp/control/basicevent1', state);
 }
