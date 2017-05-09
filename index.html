@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Wemo Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -13,14 +13,12 @@
     <div class="main-content">
         <form name="ActionButtons" action="" method="post"></form>
         <div class="button-group">
-            <h2 class="group-title">Lamp</h2><input type="button" value="On" onclick="soap(&quot;http://192.168.1.68/upnp/control/basicevent1&quot;, &quot;1&quot;);" class="btn on"><input type="button" value="Off" onclick="soap(&quot;http://192.168.1.68/upnp/control/basicevent1&quot;, &quot;0&quot;);"
-                class="btn off"></div>
+            <h2 class="group-title">Lamp</h2><input type="button" value="On" onclick="soap('http://192.168.1.68/upnp/control/basicevent1', '1');" class="btn on"><input type="button" value="Off" onclick="soap('http://192.168.1.68/upnp/control/basicevent1', '0');" class="btn off"></div>
         <div class="button-group">
-            <h2 class="group-title">Main</h2><input type="button" value="On" onclick="soap(&quot;http://192.168.1.253/upnp/control/basicevent1&quot;, &quot;1&quot;);" class="btn on"><input type="button" value="Off" onclick="soap(&quot;http://192.168.1.253/upnp/control/basicevent1&quot;, &quot;0&quot;);"
-                class="btn off"></div>
+            <h2 class="group-title">Main</h2><input type="button" value="On" onclick="soap('http://192.168.1.253/upnp/control/basicevent1', '1');" class="btn on"><input type="button" value="Off" onclick="soap('http://192.168.1.253/upnp/control/basicevent1', '0');" class="btn off"></div>
         <div class="button-group">
-            <h2 class="group-title">All</h2><input type="button" value="On" onclick="changeAll(&quot;1&quot;);" class="btn on"><input type="button" value="Off" onclick="changeAll(&quot;0&quot;);" class="btn off"></div>
-        <script src="/scripts/script.js"></script>
+            <h2 class="group-title">All</h2><input type="button" value="On" onclick="changeAll('1');" class="btn on"><input type="button" value="Off" onclick="changeAll('0');" class="btn off"></div>
+        <script src="scripts/script.js"></script>
     </div>
 </body>
 
